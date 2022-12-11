@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Central do Som</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- carrossel -->
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    
+</head>
+  <body>
+    <!-------------------- Começo da Barra de Navegação-------------------->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a href="#" 
+          class="navbar-brand mb-0 h1">
+            <img class="d-inline-block align-top" src="imagens/violao.png" width="50" >
+          Central do Som
+        </a>
+
+        <button  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+
+            <li class="nav-item active">
+              <a href="" class="nav-link"> Home </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tipos
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Percussão</a></li>
+                <li><a class="dropdown-item" href="#">Cordas</a></li>
+              </ul>
+            </li>
+          </li>
+          
+          <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Busca">
+            </form>
+          </div>
+
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-success" type="submit">Ok</button>
+          </form>
+            <li class="nav-item active">
+              <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Login
+              </a>
+            </li>
+          </ul>
+
+          
+          <!---------------------- Modal ---------------->
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Usuário</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Senha</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="liveToastBtn" data-bs-dismiss="modal">Ok</button>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <!----------------------- Notificação Toast ----------------------->
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <strong class="me-auto">Central do Som</strong>
+                <small>Agora</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                Olá, seja bem vindo a Central do Som!
+              </div>
+            </div>
+          </div>
+    </nav>
+      <!-------------------- Fim da Barra de Navegação -------------------->
+
+      <!------------------------- Produtos -------------------------------->
+      <p style="text-align:center"><strong>Central do Som</strong></p>
+      <p style="text-align:center"><strong>Os melhores instrumentos musicais do mercado estão aqui!</strong></p>
+
+		<!-- carrossel -->
+		<div class="carousel">
+			<div class="carousel__contenedor">
+
+				<!-- imagens -->
+				<div class="c__lista">
+          <div class="carousel__elemento">
+            <div class="content">
+              <img src="imagens/tambor.png" width="170">
+              <h3>Tambor</h3>
+              <h6>R$ 400</h6>
+              <button class="buy">Compre Agora</button>
+            </div>
+          </div>
+
+					<div class="carousel__elemento">
+						<div class="content">
+              <img src="imagens/guitarra.png" width="150">
+              <h3>Violão</h3>
+              <h6>R$ 500</h6>
+              <button class="buy">Compre Agora</button>
+            </div>
+					</div>
+          
+					<div class="carousel__elemento">
+            <div class="content">
+              <img src="imagens/teclado.png" width="190">
+              <h3>Teclado Musical</h3>
+              <h6>R$ 1200</h6>
+              <button class="buy">Compre Agora</button>
+            </div>
+					</div>
+
+					<div class="carousel__elemento">
+						<div class="content">
+              <img src="imagens/microfone.png" width="150">
+              <h3>Microfone</h3>
+              <h6>R$ 700</h6>
+              <button class="buy">Compre Agora</button>
+            </div>
+					</div>
+				</div>
+
+        <!-- seta anterior -->
+				<button aria-label="Anterior" class="carousel__anterior">
+					<i class="fas fa-chevron-left"></i>
+				</button>
+				<!-- seta posterior -->
+				<button aria-label="Posterior" class="carousel__posterior">
+					<i class="fas fa-chevron-right"></i>
+				</button>
+			</div>
+
+			<div role="tablist" class="carousel__indicadores"></div>
+		</div>
+
+
+      <div class="gallery">
+        <div class="content">
+            <img src="imagens/tambor.png" width="170">
+            <h3>Tambor</h3>
+            <h6>R$ 400</h6>
+            <button class="buy">Compre Agora</button>
+        </div>
+
+        <div class="content">
+            <img src="imagens/guitarra.png" width="150">
+            <h3>Violão</h3>
+            <h6>R$ 500</h6>
+            <button class="buy">Compre Agora</button>
+        </div>
+
+        <div class="content">
+            <img src="imagens/teclado.png" width="190">
+            <h3>Teclado Musical</h3>
+            <h6>R$ 1200</h6>
+            <button class="buy">Compre Agora</button>
+        </div>
+
+        <div class="content">
+            <img src="imagens/microfone.png" width="150">
+            <h3>Microfone</h3>
+            <h6>R$ 700</h6>
+            <button class="buy">Compre Agora</button>
+        </div>
+      </div>
+      <!--------------------- Fim dos Produtos ---------------------------->
+
+      <!------------------------- Começo do Footer ------------------------>
+      <section class="footer">
+        <div class="social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+  
+        <ul class="list">
+          <li>
+            <a href="#">Sobre Nós</a>
+          </li>
+          <li>
+            <a href="#">Institucional</a>
+          </li>
+          <li>
+            <a href="#">Redes Sociais</a>
+          </li>
+          <li>
+        </ul>
+        <p class="copyright">Central do Som @ 2022</p>
+      </section>
+      <!----------------------- Fim do Footer ---------------------->
+    <!-- carrossel -->
+	  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <!-- outros -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+ </body>
+</html> 
